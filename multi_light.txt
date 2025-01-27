@@ -1,0 +1,16 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(4, OUTPUT);
+  pinMode(26, INPUT);
+}
+
+void loop() {
+  int btn=0;
+  btn=digitalRead(26);
+  
+  if(btn==HIGH){
+    digitalWrite(4, HIGH); 
+  }else{  
+    digitalWrite(4,LOW);
+  }
+}
